@@ -12,12 +12,6 @@ import {
 
 const reasons = [
   {
-    icon: Trophy,
-    title: "Proven Results",
-    description:
-      "Over $150 million recovered and more than 5,000 cases handled across a wide range of injury claims.",
-  },
-  {
     icon: UserCheck,
     title: "Personalized Representation",
     description:
@@ -69,8 +63,13 @@ export default function WhyChoose() {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-8 text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-5xl">
-              Trusted Advocates For Injury Victims Across Dallas
+            <h2 className="mt-8 text-3xl font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-4xl">
+              Why Injury Victims
+              <br />
+              Trust
+              <span className="text-[#D4B06A]">
+                {" "}Harrison & Cole
+              </span>
             </h2>
 
             {/* Description */}
@@ -80,31 +79,27 @@ export default function WhyChoose() {
               representation, personalized attention, and relentless advocacy.
             </p>
 
+            {/* Quote */}
+            <div className="mt-10 border-l-2 border-[#D4B06A] pl-5">
+              <p className="text-xl font-semibold leading-relaxed text-white">
+                Fighting for injured victims and their families
+                since 2004.
+              </p>
+          </div>
+
             {/* Trust Metrics */}
-            <div className="mt-10 space-y-5 border-l border-white/10 pl-6">
+            <div className="mt-12 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
               <div>
-                <div className="text-2xl font-bold text-white">20+</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-white/50">
-                  Years Experience
-                </div>
+                <div className="text-3xl font-bold text-white">20+</div>
+                <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/50"> Years Experience</div>
               </div>
-
-              <div className="h-px w-full bg-white/10" />
-
               <div>
-                <div className="text-2xl font-bold text-white">$150M+</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-white/50">
-                  Recovered
-                </div>
+                <div className="text-3xl font-bold text-white"> $150M+ </div>
+                <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/50"> Recovered </div>
               </div>
-
-              <div className="h-px w-full bg-white/10" />
-
               <div>
-                <div className="text-2xl font-bold text-white">5,000+</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-white/50">
-                  Cases Handled
-                </div>
+                <div className="text-3xl font-bold text-white"> 5,000+ </div>
+                <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/50"> Cases Handled </div>
               </div>
             </div>
           </motion.div>
@@ -125,44 +120,22 @@ export default function WhyChoose() {
                     delay: index * 0.08,
                   }}
                   whileHover={{ y: -6 }}
-                  className="
-                    group
-                    rounded-2xl
-                    border
-                    border-white/10
-                    bg-white/[0.02]
-                    p-8
-                    transition-all
-                    duration-300
-                    hover:border-[#D4B06A]/50
-                  "
+                  className="group flex flex-col h-full rounded-2xl border border-white/10 bg-[#0d1828] p-8 transition-all duration-300 hover:border-[#D4B06A]/50"
                 >
                   {/* Icon */}
                   <div
-                    className="
-                      flex
-                      h-14
-                      w-14
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-[#D4B06A]/10
-                      text-[#D4B06A]
-                      transition-all
-                      duration-300
-                      group-hover:bg-[#D4B06A]/20
-                    "
+                    className="flex h-14 w-14 items-center justify-center rounded-full bg-[#D4B06A]/10 text-[#D4B06A] transition-all duration-300 group-hover:bg-[#D4B06A]/20"
                   >
                     <Icon className="h-6 w-6" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="mt-6 text-2xl font-bold tracking-[-0.02em] text-white">
+                  <h3 className="mt-6 text-xl font-bold tracking-[-0.02em] text-white">
                     {reason.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-4 text-base leading-7 text-white/70">
+                  <p className="mt-4 flex-1 text-base leading-7 text-white/70">
                     {reason.description}
                   </p>
                 </motion.div>
@@ -170,60 +143,6 @@ export default function WhyChoose() {
             })}
           </div>
         </div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="
-            mx-auto
-            mt-24
-            max-w-5xl
-            rounded-2xl
-            border
-            border-white/10
-            bg-white/[0.02]
-            p-10
-            text-center
-            md:p-14
-          "
-        >
-          <h3 className="text-3xl font-bold tracking-[-0.03em] text-white md:text-4xl">
-            Ready To Discuss Your Case?
-          </h3>
-
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/70">
-            Schedule a free consultation today and learn how our attorneys can
-            help protect your rights and pursue the compensation you deserve.
-          </p>
-
-          <a
-            href="#contact"
-            className="
-              group
-              mt-10
-              inline-flex
-              items-center
-              justify-center
-              rounded-md
-              bg-[#D4B06A]
-              px-8
-              py-4
-              text-sm
-              font-semibold
-              text-black
-              transition-all
-              duration-300
-              hover:-translate-y-[2px]
-            "
-          >
-            Get Free Consultation
-
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
-        </motion.div>
       </div>
     </section>
   );
