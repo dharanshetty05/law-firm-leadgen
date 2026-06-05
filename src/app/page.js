@@ -1,5 +1,6 @@
 import HeroSection from "@/components/Hero";
 import PracticeAreas from "@/components/PracticeArea";
+import Results from "@/components/Results";
 import WhyChoose from "@/components/WhyChoose";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <PracticeAreas />
       <WhyChoose />
+      <Results />
     </>
   )
 }
