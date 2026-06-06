@@ -1,6 +1,7 @@
 import HeroSection from "@/components/Hero";
 import PracticeAreas from "@/components/PracticeArea";
 import Results from "@/components/Results";
+import Testimonials from "@/components/Testimonials";
 import WhyChoose from "@/components/WhyChoose";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <PracticeAreas />
       <WhyChoose />
       <Results />
+      <Testimonials />
     </>
   )
 }
