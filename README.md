@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Harrison & Cole Injury Attorneys
 
-## Getting Started
+A conversion-focused law firm website built for a fictional personal injury law firm. The project was created to demonstrate modern frontend development skills, UX principles, and high-converting website structure for service-based businesses.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This website is designed around one primary objective:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Generate consultation requests.**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Instead of focusing on flashy animations or trendy effects, the site prioritizes:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Trust building
+- Clear messaging
+- Strong calls-to-action
+- Mobile-first experience
+- Conversion-focused design
 
-## Learn More
+The fictional client, Harrison & Cole Injury Attorneys, specializes in personal injury law and has over 20 years of experience helping accident victims recover compensation.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Conversion-focused hero section
+- Trust indicators and credibility metrics
+- Practice area showcase
+- Attorney profiles
+- Case results section
+- Client testimonials
+- FAQ section
+- Multiple consultation CTAs
+- Responsive design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- Next.js
+- React
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design Goals
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project follows a law firm design strategy centered around:
+
+- Building trust
+- Reducing friction
+- Generating consultations
+
+Every section is intentionally designed to support one or more of these goals. :contentReference[oaicite:1]{index=1}
+
+## Project Purpose
+
+This project was built as a portfolio piece to showcase:
+
+- Frontend development
+- Conversion-focused web design
+- Information architecture
+- UI/UX thinking for professional service businesses
+
+## Disclaimer
+
+This is a fictional project created for educational and portfolio purposes only. Harrison & Cole Injury Attorneys is a fictional law firm and does not provide legal services.
