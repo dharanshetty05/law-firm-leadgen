@@ -1,3 +1,4 @@
+import Attorney from "@/components/Attorney";
 import HeroSection from "@/components/Hero";
 import PracticeAreas from "@/components/PracticeArea";
 import Results from "@/components/Results";
@@ -12,6 +13,7 @@ export default function Home() {
       <WhyChoose />
       <Results />
       <Testimonials />
+      <Attorney />
     </>
   )
 }
