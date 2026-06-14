@@ -39,7 +39,7 @@ export default function Testimonials() {
   const supporting = testimonials.slice(1);
 
   return (
-    <section className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
+    <section id="testimonials" className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
       {/* Background Glow */}
 
       <div className="absolute inset-0">

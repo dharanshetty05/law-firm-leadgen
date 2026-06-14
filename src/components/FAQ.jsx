@@ -36,7 +36,7 @@ export default function FAQ() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
+    <section id="faq" className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
       <div className="absolute inset-0">
         <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#D4B06A]/5 blur-[140px]" />
       </div>

@@ -23,7 +23,7 @@ const results = [
 
 export default function Results() {
   return (
-    <section className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
+    <section id="results" className="relative overflow-hidden bg-[#08111f] py-24 md:py-32">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#D4B06A]/5 blur-[140px]" />

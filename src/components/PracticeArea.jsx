@@ -50,7 +50,7 @@ const practiceAreas = [
 
 export default function PracticeAreas() {
   return (
-    <section className="relative bg-[#08111f] py-20 md:py-28 overflow-hidden">
+    <section id="practice-areas" className="relative bg-[#08111f] py-20 md:py-28 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#D4B06A]/10 blur-[140px]" />
