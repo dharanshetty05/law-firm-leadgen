@@ -7,19 +7,24 @@ import {
   ShieldCheck,
   CheckCircle2,
 } from "lucide-react";
+import CountUp from "react-countup";
 
 export default function HeroSection() {
   const stats = [
     {
-      value: "$150M+",
+      value: 150,
+      prefix: "$",
+      suffix: "M+",
       label: "Recovered For Clients",
     },
     {
-      value: "5,000+",
+      value: 5000,
+      suffix: "+",
       label: "Cases Handled",
     },
     {
-      value: "20+",
+      value: 20,
+      suffix: "+",
       label: "Years Experience",
     },
   ];
@@ -29,10 +34,18 @@ export default function HeroSection() {
       {/* Background */}
 
       <div className="absolute inset-0">
-        <img
+        <motion.img
           src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?auto=format&fit=crop&w=2400&q=80"
           alt=""
           className="h-full w-full object-cover"
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.08 }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }}
         />
 
         <div className="absolute inset-0 bg-[#08111f]/75" />
@@ -104,28 +117,59 @@ export default function HeroSection() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#contact"
-                className="
-                  group
-                  inline-flex
-                  items-center
-                  justify-center
-                  rounded-md
-                  bg-[#D4B06A]
-                  px-8
-                  py-4
-                  text-sm
-                  font-semibold
-                  text-black
-                  transition-all
-                  duration-300
-                  hover:translate-y-[-2px]
-                "
-              >
-                Get Free Consultation
+  href="#contact"
+  className="
+    group
+    relative
+    overflow-hidden
+    inline-flex
+    items-center
+    justify-center
+    rounded-md
+    bg-[#D4B06A]
+    px-8
+    py-4
+    text-sm
+    font-semibold
+    text-black
+    transition-all
+    duration-300
+    hover:-translate-y-0.5
+    shadow-[0_10px_30px_rgba(212,176,106,0.25)]
+hover:shadow-[0_15px_40px_rgba(212,176,106,0.35)]
+  "
+>
+  <span
+    className="
+      absolute
+      inset-y-0
+      -left-20
+      w-12
+      rotate-12
+      bg-white/40
+      blur-sm
+      transition-all
+      duration-700
+      group-hover:left-[120%]
+    "
+  />
 
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+  <span className="relative z-10">
+    Get Free Consultation
+  </span>
+
+  <ArrowRight
+    className="
+      relative
+      z-10
+      ml-2
+      h-4
+      w-4
+      transition-transform
+      group-hover:translate-x-1
+    "
+  />
+</a>
 
               <a
                 href="tel:+12145550198"
@@ -161,7 +205,17 @@ export default function HeroSection() {
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <div className="text-4xl font-bold text-white">
-                    {stat.value}
+                    {stat.prefix}
+
+                    <CountUp
+                      end={stat.value}
+                      duration={2.5}
+                      separator=","
+                      enableScrollSpy
+                      scrollSpyOnce
+                    />
+
+                    {stat.suffix}
                   </div>
 
                   <div className="mt-2 text-xs uppercase tracking-[0.2em] text-white/60">
