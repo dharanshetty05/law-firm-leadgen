@@ -13,7 +13,7 @@ import {
 const reasons = [
   {
     icon: UserCheck,
-    title: "Personalized Representation",
+    title: "Every Case Gets A Custom Strategy Built Around Your Injuries And Financial Losses",
     description:
       "Every case receives dedicated attention, clear communication, and a legal strategy tailored to your situation.",
   },
@@ -25,13 +25,13 @@ const reasons = [
   },
   {
     icon: Scale,
-    title: "Aggressive Negotiation",
+    title: "We Push Insurance Companies For Maximum Compensation And Prepare Every Case As If It Will Go To Trial",
     description:
       "We stand up to insurance companies and fight aggressively for the maximum compensation available.",
   },
   {
     icon: Users,
-    title: "Dedicated Legal Team",
+    title: "You Work Directly With Your Attorney",
     description:
       "Our attorneys and support staff work together to guide you through every step of the legal process.",
   },
